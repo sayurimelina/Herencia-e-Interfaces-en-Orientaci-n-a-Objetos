@@ -54,12 +54,19 @@ Buenas prácticas a la hora de declarar atributos.
 Declarar los atributos privados en la medida de lo posible
 Problemas relacionados a la repetición de código
 
-## 2. video
+## 2. Herencia
 
-## 3. Herencia
+IDENTIFICANDO POR TIPO DE CLASE 
+- especializacion de las clases | implementacio de condicion de comision
+- definiendo un tipo para l clase Cuenta
 
-## 4. Clases abstractas
+agregamos atributo tipo al contructor de Cuenta
 
-## 5. Sistema interno
+HERENCIA 
+- extendiendo la clase cuenta
+- extendiendo la palabra reservadasa 'super'
+## 3. Clases abstractas
 
-## 6. Interfaces y Duck Type
+## 4. Sistema interno
+
+## 5. Interfaces y Duck Type
