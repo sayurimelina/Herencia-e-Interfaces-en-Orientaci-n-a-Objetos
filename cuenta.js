@@ -7,8 +7,8 @@ export class Cuenta
     #saldo;
 
     //atributos publicos: numero y agencia
-    constructor(tipo, cliente, numero, agencia, saldo) {
-        this.tipo = tipo;
+    constructor(cliente, numero, agencia, saldo) {
+        //this.tipo = tipo;
         this.numero = numero;
         this.agencia = agencia;
         this.#cliente = cliente;
@@ -32,10 +32,12 @@ export class Cuenta
     }
 
     retirarDeCuenta(valor) {
+        /* poner parametro tipo y dar parsametros
         if (this.tipo == 'Corriente')
             valor = valor * 1.05; // comision 105% = 5% de lo que retiro y se cobra a lo que me queda en la cuenta
         else if(this.tipo == 'Ahorro')
             valor = valor * 1.02;  // comision 2% del retiro
+        */
         if (valor <= this.#saldo)
             this.#saldo -= valor;
         return this.#saldo;
@@ -49,5 +51,8 @@ export class Cuenta
         this.retirarDeCuenta(valor);
         cuentaDestino.depositoEnCuenta(valor);
 
+    }
+    prueba() {
+        console.log('metodo padrisimo en cuenta');
     }
 }
